@@ -1,0 +1,20 @@
+import { Component, OnInit } from '@angular/core';
+import { AuthService } from 'src/app/usuarios/auth.service';
+//import {Bootstrap} from 'bootstrap/dist/js/bootstrap';
+
+@Component({
+  selector: 'app-header',
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.css']
+})
+export class HeaderComponent implements OnInit {
+
+  constructor(private auth: AuthService) { }
+
+  ngOnInit(): void {
+  }
+
+  logout(){
+    this.auth.logOut()
+  }
+}

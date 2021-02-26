@@ -1,0 +1,12 @@
+<div style="display: block">
+  <h1 class="text-align: center;"> EDAD USUARIOS</h1>
+  <canvas baseChart
+      [chartType]="chartType"
+      [datasets]="chartDatasets"
+      [labels]="chartLabels"
+      [colors]="chartColors"
+      [legend]="true"
+      (chartHover)="chartHovered($event)"
+      (chartClick)="chartClicked($event)">
+  </canvas>
+</div>

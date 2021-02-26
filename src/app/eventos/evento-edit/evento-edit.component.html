@@ -1,0 +1,94 @@
+<div class="container">
+
+  <h1 style="text-align: center; color:#F39200; "> Editar Evento</h1>
+
+  <form class="row g-3" #formEvento= "ngForm" novalidate>
+
+    <div class="col-md-6">
+      <label for="id" class="form-label"> Id Evento:</label>
+      <input type="text" class="form-control" name="id" id="id"
+      [(ngModel)]="evento.id" #inputId="ngModel" required
+      [ngClass]="{'is-valid': inputId.valid && inputId.touched,
+      'is-invalid': inputId.invalid && inputId.touched}">
+
+      <div *ngIf="inputId.touched && inputId.invalid" class="alert alert-danger">Id requerido</div>
+
+    </div>
+
+    <div class="col-md-6">
+      <label for="titulo" class="form-label"> Titulo:</label>
+      <input type="text" class="form-control" name="titulo" id="titulo"
+      [(ngModel)]="evento.titulo" #inputTitulo="ngModel" required minlength="5" maxlength="30"
+      [ngClass]="{'is-valid': inputTitulo.valid && inputTitulo.touched,
+      'is-invalid': inputTitulo.invalid && inputTitulo.touched}">
+
+      <div *ngIf="inputTitulo.touched && inputTitulo.invalid" class="alert alert-danger">Titulo requerido</div>
+    </div>
+
+    <div class="col-md-6">
+      <label for="fecha" class="form-label"> Fecha:</label>
+      <input type="date" class="form-control" name="fecha" id="fecha"
+      [(ngModel)]="evento.fecha" #inputFecha="ngModel"
+      [ngClass]="{'is-valid': inputFecha.valid && inputFecha.touched,
+      'is-invalid': inputFecha.invalid && inputFecha.touched}">
+    </div>
+
+    <div class="col-md-6">
+      <label for="sitio" class="form-label"> Sitio:</label>
+      <input type="text" class="form-control" name="sitio" id="sitio"
+      [(ngModel)]="evento.sitio" #inputSitio="ngModel"
+      [ngClass]="{'is-valid': inputSitio.valid && inputSitio.touched,
+      'is-invalid': inputSitio.invalid && inputSitio.touched}">
+    </div>
+
+    <div class="col-12">
+      <label for="descripcion" class="form-label"> Descripcion:</label>
+      <input type="text" class="form-control" name="descripcion" id="descripcion"
+      [(ngModel)]="evento.descripcion" minlength="10" #inputDescripcion="ngModel"
+      [ngClass]="{'is-valid': inputDescripcion.valid && inputDescripcion.touched,
+      'is-invalid': inputDescripcion.invalid && inputDescripcion.touched}">
+    </div>
+
+    <div class="col-md-3">
+      <label for="nivel" class="form-label"> Nivel:</label>
+      <input type="text" class="form-control" name="nivel" id="nivel"
+      [(ngModel)]="evento.nivel" #inputNivel="ngModel"
+      [ngClass]="{'is-valid': inputNivel.valid && inputNivel.touched,
+      'is-invalid': inputNivel.invalid && inputNivel.touched}">
+    </div>
+
+    <div class="col-md-3">
+      <label for="plazas" class="form-label"> Plazas:</label>
+      <input type="text" class="form-control" name="plazas" id="plazas"
+      [(ngModel)]="evento.plazas" #inputPlazas="ngModel"
+      [ngClass]="{'is-valid': inputPlazas.valid && inputPlazas.touched,
+      'is-invalid': inputPlazas.invalid && inputPlazas.touched}">
+    </div>
+
+    <div class="col-md-3">
+      <label for="precio" class="form-label"> Precio:</label>
+      <input type="text" class="form-control" name="precio" id="precio"
+      [(ngModel)]="evento.precio" #inputPrecio="ngModel"
+      [ngClass]="{'is-valid': inputPrecio.valid && inputPrecio.touched,
+      'is-invalid': inputPrecio.invalid && inputPrecio.touched}">
+
+
+    </div>
+
+    <div class="col-md-3">
+      <label for="tipo" class="form-label"> Tipo:</label>
+      <input type="text" class="form-control" name="tipo" id="tipo"
+      [(ngModel)]="evento.tipo" #inputTipo="ngModel" required
+      [ngClass]="{'is-valid': inputTipo.valid && inputTipo.touched,
+      'is-invalid': inputTipo.invalid && inputTipo.touched}"
+      >
+      <div *ngIf="inputTipo.touched && inputTipo.invalid" class="alert alert-danger">Tipo de Evento requerido</div>
+    </div>
+
+    <div class="col-md-3">
+      <button type="submit" class="btn" style="background:#F39200;"> Actualizar </button>
+    </div>
+
+  </form>
+
+  </div>

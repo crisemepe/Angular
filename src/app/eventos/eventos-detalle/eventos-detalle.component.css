@@ -1,0 +1,123 @@
+.display-flex, .evento-content{
+    display: flex;
+    display: -webkit-flex;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+figure{
+    margin: 0;
+}
+
+.gap{
+    padding-bottom: -50px;
+}
+
+tr {
+    margin-bottom: 0.5em;
+}
+
+h2{
+    line-height: 1.8;
+    padding-top: 2px;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    font-family: var(--bs-font-sans-serif);
+    font-size: 18pt;
+    text-align: center;
+    color: #F39200;
+    text-transform: uppercase;
+    
+}
+
+
+h6 {
+    margin: 0;
+    border-radius: 0.8em;
+    background: linear-gradient(to left,#F39200, #FECD44, #F39200); 
+    width: 8em;
+
+}
+
+.main{
+    padding: 115px 0;
+    position: relative;
+}
+
+.container {
+    width: 60%;
+    background-color: white;
+    margin: 0 auto;
+    box-shadow: 0px 10px 9.9px 0.1px black;
+    border-radius: 2em;
+}
+
+.evento-content {
+    flex-wrap: wrap;
+}
+
+.evento-imagen{
+    width: 30%;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.evento-img {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.evento-texto{
+    width: 60%;
+    margin: 0;
+    font-family: var(--bs-font-sans-serif);
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.row-ev{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x)/ -2);
+    margin-left: calc(var(--bs-gutter-x)/ -2);
+    margin: auto;
+    justify-content: space-around;
+    }
+    
+    #prof-ev{
+        padding:0.9em;
+    }
+    
+
+@media screen and (max-width: 1200px){
+    .container{
+        width: calc(100%-30px);
+        max-width:100%;
+        background: transparent;
+    }
+
+    .evento-content{
+        flex-direction: column;
+    }
+
+    .evento-imagen{
+        width:100%;
+        order:2;
+        text-align: center;
+    }
+    .evento-img{
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        width: 100%;
+    }
+}
+
+

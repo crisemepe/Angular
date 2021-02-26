@@ -1,0 +1,10 @@
+<div class="container" style="width: 70%;">
+  <div class="filtro" style="display: inline-flex;">
+    <p style="margin-left: 1em; margin-top: 1em; display: flex;"> Filtrar Usuarios:   </p>
+    <input style="margin-top: 1em; margin-left: 1em; width: 250px" type="text" name="buscarUsuario" id="buscarUsuario" [(ngModel)]="busqueda"/>
+
+  </div>
+ <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3">
+          <app-usuario-item [usuario]="usuario" *appTiempoEspera="let usuario of usuarios | filtroUsuario: busqueda"></app-usuario-item>
+  </div>
+</div>

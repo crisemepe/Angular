@@ -1,0 +1,35 @@
+{"usuarios": [
+  {"email": "moni", "password":"123", "token":"ajk12ii7", "nombre": "Monica", "foto": "assets/img/perfil/1.png", "portada":"assets/img/portada/date.jpg","tipo": "D",
+  "ciudad": "Donosti", "edad": 28, "genero": "mujer", "profesion": "Profesora", "quiero": "mismo", "intereses":"niños, aire libre, deporte"},
+
+  {"email": "nacho", "password":"123", "token":"kol1mej4", "nombre": "Nacho", "foto": "assets/img/perfil/2.png", "portada":"assets/img/portada/work.jpg", "tipo": "W",
+    "ciudad": "Valencia", "edad": 31, "genero": "hombre", "profesion": "Administrativo", "quiero": "opuesto", "intereses":"bolsa, cine, aire libre"},
+
+  {"email": "paula", "password":"123", "token": "1jielar3", "nombre": "Paula", "foto": "assets/img/perfil/3.png", "portada":"assets/img/portada/friends.jpg", "tipo": "F",
+    "ciudad": "Barcelona", "edad": 24, "genero": "mujer", "profesion": "Diseñadora", "quiero": "opuesto", "intereses":"deporte, animales, lectura"},
+
+  {"email": "hg33", "password": "123", "token": "jdecf1ht33", "nombre": "Hugo", "foto": "assets/img/perfil/4.png", "portada":"assets/img/portada/friends.jpg", "tipo": "F",
+    "ciudad": "Hondarribia", "edad": 33, "genero": "hombre", "profesion": "Informático", "quiero": "opuesto", "intereses":"videojuegos, series, cine"},
+
+  {"email": "martarq", "password":"456", "token":"io4nn1maek", "nombre": "Marta", "foto": "assets/img/perfil/5.png", "portada":"assets/img/portada/work.jpg", "tipo": "W",
+    "ciudad": "Oviedo", "edad": 29, "genero": "mujer", "profesion": "Arquitecta", "quiero": "opuesto", "intereses": "series, arte, viajar"},
+
+  {"email": "alx", "password": "123", "token": "mneu1k47s","nombre": "Alex", "foto": "assets/img/perfil/6.png", "portada":"assets/img/portada/work.jpg", "tipo": "W",
+    "ciudad": "Cuenca", "edad": 25, "genero": "hombre", "profesion": "Ingeniero", "quiero": "opuesto", "intereses":"viajar, animales, series"},
+
+  {"email": "Pilarin", "password":"456", "token": "bridhe1","nombre": "Pilar", "foto": "assets/img/perfil/7.png", "portada":"assets/img/portada/friends.jpg", "tipo": "F",
+    "ciudad": "Zaragoza", "edad": 22, "genero": "mujer", "profesion": "Estudiante", "quiero": "opuesto", "intereses": "series, videojuegos, deporte" },
+
+  {"email": "sundr", "password": "123", "token":"kx90mkila", "nombre": "Sandra", "foto": "assets/img/perfil/8.png", "portada":"assets/img/portada/friends.jpg", "tipo": "F",
+    "ciudad": "Huelva", "edad": 30, "genero": "mujer", "profesion": "Músico", "quiero": "opuesto", "intereses": "musica, cine, viajar"},
+
+  {"email": "nuria", "password":"456", "token": "8kol0met3", "nombre": "Marta", "foto": "assets/img/perfil/9.png", "portada":"assets/img/portada/date.jpg", "tipo": "D",
+        "ciudad": "Bilbao", "edad": 34, "genero": "mujer", "profesion": "Ilustradora", "quiero": "mismo", "intereses":"animales, lectura, aire libre"},
+
+  {"email": "raulvi", "password": "123", "token":"4gu5hwzk","nombre": "Raul", "foto": "assets/img/perfil/10.png", "portada":"assets/img/portada/friends.jpg", "tipo": "F",
+   "ciudad": "Castellon", "edad": 31, "genero": "hombre", "profesion": "Redactor", "quiero": "opuesto", "intereses":"lectura, cine, musica"}
+
+
+
+]}
+

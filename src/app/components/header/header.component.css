@@ -1,0 +1,53 @@
+.menu_centro{
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    z-index: 1;
+
+}
+#menu_color{
+    background: linear-gradient(to left,#F39200, #FECD44, #F39200) !important;
+    border-radius: 2em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    z-index:1;
+}
+
+.logo_peque{
+    margin: auto;
+    padding-top: 0.8em;
+    padding-bottom: 0.3em;
+    display:block;
+}
+
+.menu-login {
+  margin-left: 70%;
+  display: inline-flex;
+}
+
+.login{
+  background-color: #F39200;
+  margin: 0.1em;
+  border-radius: 4em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+}
+
+.login a{
+  text-decoration: none;
+  color: black;
+}
+
+.logout{
+  background-color: #F39200;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  margin: 0.1em;
+  border-radius: 4em;
+  color: black;
+  cursor: pointer;
+}

@@ -1,0 +1,63 @@
+<div class="container">
+  <h1 style="text-align: center; color:#F39200; ">Nuevo Evento</h1>
+
+  <form [formGroup]="formNuevo" novalidate class="row g-3" >
+
+    <div class="col-md-6">
+      <label for="id" class="form-label"> Id</label>
+      <input type="text" class="form-control" placeholder="idEvento" name="id" id="id" required>
+      <div *ngIf="formNuevo.controls['id'].invalid" class="alert alert-danger"> Id requerido</div>
+    </div>
+
+    <div class="col-md-6">
+      <label for="titulo" class="form-label"> Titulo</label>
+      <input type="text" class="form-control" placeholder="Titulo Evento" name="titulo" id="titulo">
+
+      <div *ngIf="formNuevo.controls['titulo'].invalid" class="alert alert-danger"> El máximo del titulo es de 30 caracteres</div>
+    </div>
+
+    <div class="col-md-6">
+      <label for="fecha" class="form-label"> Fecha</label>
+      <input type="date" class="form-control" name="fecha" id="fecha">
+    </div>
+
+    <div class="col-md-6">
+      <label for="sitio" class="form-label"> Sitio</label>
+      <input type="text" class="form-control" placeholder="Sitio Evento" name="sitio" id="sitio">
+    </div>
+
+    <div class="col-md-6">
+      <label for="descripcion" class="form-label"> Descripción</label>
+      <input type="text" class="form-control" placeholder="Descripción Evento" name="descripcion" id="descripcion">
+    </div>
+
+    <div class="col-md-3">
+      <label for="nivel" class="form-label"> Nivel</label>
+      <input type="text" class="form-control" placeholder="Nivel Dificultad" name="nivel" id="nivel">
+    </div>
+
+
+    <div class="col-md-3">
+      <label for="plazas" class="form-label"> Plazas</label>
+      <input type="text" class="form-control" placeholder="Plazas Disponibles" name="plazas" id="plazas">
+    </div>
+
+
+    <div class="col-md-3">
+      <label for="precio" class="form-label"> Precio</label>
+      <input type="text" class="form-control" placeholder="Precio Evento" name="precio" id="precio">
+    </div>
+
+
+    <div class="col-md-3">
+      <label for="tipo" class="form-label"> Tipo</label>
+      <input type="text" class="form-control" placeholder="Tipo Evento: D F W" name="tipo" id="tipo" required>
+
+      <div *ngIf="formNuevo.controls['id'].invalid" class="alert alert-danger"> Tipo requerido</div>
+    </div>
+
+    <div class="">
+      <a appHover [cambiaColor]="color" #color class="btn btn-light" style="background: linear-gradient(to top, #FECD44, #F39200) !important; border-radius: 2em; margin-bottom: 1em;" [routerLink]="['/eventos/nuevo']"> Crear Nuevo Evento </a>
+    </div>
+
+  </form>

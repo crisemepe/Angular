@@ -1,0 +1,53 @@
+
+<!--  Codigo de Castillo
+<li class="list-group-item list-group-item d-flex justify-content-between align-items-center">
+    <div class="" style="max-width:100px;">
+        <img class="img-fluid rounded" [src]="evento.foto">
+    </div>
+    <div>
+        <div>
+            <p> Titulo: {{evento.titulo}}</p>
+            <p> ID: {{evento.id}}</p>
+            <p> Fecha: {{evento.fecha}}</p>
+        </div>
+    </div>
+    <a class="btn btn dark" >Detalles</a>
+    </li>
+ -->
+
+    <div class="col divItem">
+        <div class="profile-card-4 text-center"><img src={{evento.fotoP}} class="img-responsive">
+                <div class="profile-name"> {{evento.titulo}}
+                    <p>{{evento.fecha}}</p>
+                </div>
+                <div class="profile-description">{{evento.descripcion}}
+                </div>
+                <div class="row-ev">
+                    <div class="col-xs-4">
+                        <div class="profile-overview" id="prof-ev">
+                            <p>Nivel</p>
+                            <h5>{{evento.nivel}}</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-4">
+                        <div class="profile-overview" id="prof-ev">
+                            <p>Plazas</p>
+                            <h5>{{evento.plazas}}</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-4">
+                        <div class="profile-overview" id="prof-ev">
+                            <p> Precio </p>
+                            <h5>{{evento.precio}}</h5>
+                        </div>
+                    </div>
+
+                </div>
+                 <a appHover [cambiaColor]="color" #color class="btn btn-light" style="background: linear-gradient(to top, #FECD44, #F39200) !important; border-radius: 2em; margin-bottom: 1em;" [routerLink]="['/evento', evento.id]">Detalles</a>
+                 <a appHover [cambiaColor]="color" #color class="btn btn-light" style="background: linear-gradient(to top, #FECD44, #F39200) !important; border-radius: 2em; margin-bottom: 1em;" [routerLink]="['/evento/edit', evento.id]"> Actualizar </a>
+            </div>
+        </div>
+
+

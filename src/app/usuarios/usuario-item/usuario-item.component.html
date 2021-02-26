@@ -1,0 +1,19 @@
+<!--IDea usuarios: foto de usuario en pequeño, y de fondo un array de 3 fotos y que ponga de fondo una u otra dependiendo de su tipo
+si es D (date) F (friend) o W (work)-->
+
+<script>
+  $(".hover").mouseleave(function () {
+  $(this).removeClass("hover");
+});
+</script>
+
+<figure class="snip1336">
+  <img src={{usuario.portada}} alt="tipo-cuenta" />
+  <figcaption>
+    <img src={{usuario.foto}} alt="profile-user" class="profile" />
+    <h2>{{usuario.nombre}}<span>{{usuario.profesion}}</span></h2>
+    <p> {{usuario.intereses}}</p>
+    <a class="follow">{{usuario.ciudad}}</a>
+    <a class="info">{{usuario.edad}}</a>
+  </figcaption>
+</figure>

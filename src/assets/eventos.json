@@ -1,0 +1,27 @@
+{"eventos": [
+        {"id": "F1", "titulo": "Quedada para hacer surf", "fotoP": "assets/img/surf.jpg", "fotoM":"assets/img/surfG.jpg", "fecha": "2021-06-16", "sitio": "Daimus",
+        "descripcion":"Quedada en grupo para prácticar surf Nivel Principiante. Consta de 1h de clase y 1h de actividad libre. El precio incluye todo el material necesario. Deberás traer bañador y chanclas, y estar a las 10:00 en el centro de surf Ohana",
+        "nivel": "medio", "plazas": 10, "precio": 20.00, "tipo": "F"},
+
+        {"id": "F2", "titulo": "Rafting en grupo", "fotoP": "assets/img/rafting.jpg", "fotoM":"assets/img/raftingG.jpg", "fecha": "2021-09-08", "sitio":"Venta del Moro",
+        "descripcion":"Mañana de rafting o descenso de rapidos en el rio Cabriel, descenderemos 8km. Requisito indispensable: saber nadar. El precio incluye todo el material. Grupos de barca 8 personas, grupos de canoa de 2 personas. Traer ropa de baño y zapatillas sumergibles. Salida desde el parking de Multiaventura.",
+        "nivel": "medio", "plazas": 15, "precio": 30.00, "tipo": "F"},
+
+        {"id": "D1", "titulo": "Excursión Chulilla", "fotoP": "assets/img/chulilla.jpg", "fotoM":"assets/img/chulillaG.jpg", "fecha": "2021-10-12", "sitio":"Chulilla",
+        "descripcion":"Excursión para pasar el dia. Ruta de los puentes colgantes de Chulilla. Se recomienda traer calzado cómodo, y ropa de montaña, mochila con agua y comida y, opcionalmente, palos de senderismo o cámara de fotografía. Actividad no recomendada para gente con miedo a las alturas o vertigo. Duración de la ruta: 4h.",
+        "nivel": "bajo", "plazas": 30, "precio": 1.00, "tipo": "D"},
+
+        {"id": "W1", "titulo": "Blanc! Festival", "fotoP": "assets/img/blanc.jpg", "fotoM":"assets/img/blancG.jpg", "fecha": "2021-10-23", "sitio":"Barcelona",
+        "descripcion":"Quedada para acudir al Blanc! Festival de diseño, creatividad y innovación de Barcelona. Pasaremos el dia en el festival, iremos a varias masterclass y charlas que mas nos interesen, y comeremos juntos en un restaurante cercano. El precio incluye la entrada de fin de semana y la comida. ",
+        "nivel": "", "plazas": 50, "precio": 30.00, "tipo": "W"},
+
+        {"id": "D2", "titulo": "Cena Exótica en Voltereta Bali", "fotoP": "assets/img/voltereta.jpg", "fotoM":"assets/img/volteretaG.jpg", "fecha": "2021-10-06", "sitio":"Valencia",
+        "descripcion":"Cena en Voltereta, un rinconcito de Bali en Valencia Capital. Restaurante diferente ubicado en Gran Via del Marques de Turia nº 59, una selva con plantas, un puente y mucha decoración en su interior, tienen muy cuidada su imagen y decoración para que recuerde a Indonesia.",
+        "nivel": "", "plazas": 10, "precio": 0.00, "tipo": "D"},
+
+        {"id": "D3", "titulo": "Fin de semana en la Nieve", "fotoP": "assets/img/nieve.jpg", "fotoM":"assets/img/nieveG.jpg", "fecha": "2021-12-12", "sitio":"Andorra",
+        "descripcion":"Cena en Voltereta, un rinconcito de Bali en Valencia Capital. Restaurante diferente ubicado en Gran Via del Marques de Turia nº 59, una selva con plantas, un puente y mucha decoración en su interior, tienen muy cuidada su imagen y decoración para que recuerde a Indonesia.",
+        "nivel": "medio", "plazas": 10, "precio": 0.00, "tipo": "D"}
+
+]
+}

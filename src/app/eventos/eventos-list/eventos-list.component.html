@@ -1,0 +1,21 @@
+<div class="container" style="width: 70%;">
+  <div class="filtro" style="display: inline-flex;">
+
+    <p style="margin-left: 1em; margin-top: 1em; display: flex;"> Filtrar Eventos:   </p>
+    <input style="margin-top: 1em; margin-left: 1em; width: 250px" type="text" name="buscarEvento" id="buscarEvento" [(ngModel)]="criterio"/>
+    <div style="margin-top: 0.5em; margin-left: 3em;">
+      <a appHover [cambiaColor]="color" #color class="btn btn-light" style="background: linear-gradient(to top, #FECD44, #F39200) !important; border-radius: 2em; margin-bottom: 1em;" [routerLink]="['/eventos/nuevo']"> Nuevo Evento </a>
+    </div>
+
+  </div>
+  <p style="margin-left: 1em; margin-top: 0.2em; font-size: 9pt;"> *** D (Date) si buscamos citas, F (Friends) si buscamos amistad, W (work) si buscamos eventos de trabajo   </p>
+
+
+  <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3">
+
+
+          <app-eventos-item [evento]="evento" *ngFor="let evento of eventos | filtroEventos: criterio"></app-eventos-item>
+
+  </div>
+
+</div>

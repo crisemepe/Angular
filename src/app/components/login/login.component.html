@@ -1,0 +1,36 @@
+  <script>
+      $('.message a').click(function(){
+   $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+   });
+  </script>
+
+  <div class="container" style="margin: 2em;">
+  <div class="form">
+    <div class="thumbnail"><img src="assets/img/login.png"/></div>
+    <form class="register-form">
+      <input type="password" placeholder="password"/>
+      <input type="text" placeholder="email"/>
+      <button>Crear</button>
+      <p class="message">Ya estas registrado? <a href="#">Login</a></p>
+    </form>
+    <form class="login-form">
+      <div class="linea">
+        <img src="assets/img/email.png" style="width: auto; height: 50px;">
+        <input type="text" id="inputEmail"  [(ngModel)] = "usuario.email" name="email" placeholder="Email" required autofocus/>
+      </div>
+
+      <div class="linea">
+        <img src="assets/img/passwd.png" style="width: auto; height: 50px;">
+        <input type="password" placeholder="Contraseña" id="inputPassword" [(ngModel)] = "usuario.passwd" name="passwd" required/>
+      </div>
+      <div style="display: flex; flex-direction: row; justify-content: center;">
+        <input type="checkbox" name="recordar" value="recuerdame" [(ngModel)]="recordar"><span style="margin-left: -20px;">Recuérdame</span>
+
+      </div>
+
+
+      <button (click)="login($event);">Login</button>
+      <p class="message">No estas registrado? <a href="#">Crea una cuenta</a></p>
+    </form>
+  </div>
+</div>

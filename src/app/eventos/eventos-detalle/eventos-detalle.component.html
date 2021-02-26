@@ -1,0 +1,49 @@
+<div class="main">
+    <div class="container">
+        <div class="evento-content d-flex justify-content-around">
+            <div class="evento-imagen">
+                <img class="evento-img" src={{evento.fotoM}} alt="Imagen Evento">
+            </div> 
+            <div class="evento-texto">
+            <table class="table table-responsive">
+                <tr>
+                    <h2> {{evento.titulo}}</h2>
+                    <div class="gap"></div>
+                </tr>
+                <tbody>
+                    <tr>
+                        <h6> Fecha: </h6>
+                        <p style="margin-bottom:0;">{{evento.fecha | date:'dd/MM/yyyy'}}</p> 
+                    </tr>
+                    <tr>
+                        <h6> Descripción: </h6>      
+                            <p style="margin-bottom:0;">{{evento.descripcion}}</p>
+                    </tr>
+                    <tr>
+                        <h6>Sitio:</h6> 
+                        <p style="margin-bottom:0;">{{evento.sitio | uppercase}}</p>
+                    </tr>
+                    <tr>
+                        <div class="row-ev">
+                            <div class="col-xs-4">
+                                    <p style="font-size: 14pt; font-weight: 800; color: #F39200; margin-bottom:0;">NIVEL </p>
+                                    <p style="text-align:center;">{{evento.nivel}}</p>
+                            </div>
+        
+                            <div class="col-xs-4">
+                                    <p style="font-size: 14pt; font-weight: 800; color: #F39200; margin-bottom:0;">PLAZAS</p>
+                                    <p style="text-align:center;">{{evento.plazas}}</p>
+                            </div>
+        
+                            <div class="col-xs-4">
+                                    <p style="font-size: 14pt; font-weight: 800; color: #F39200; margin-bottom:0;"> PRECIO </p>
+                                    <p style="text-align:center;">{{evento.precio}} €</p>
+                                </div>
+                            </div>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
